@@ -1,0 +1,9 @@
+div
+  h4 Ejemplo de componente
+
+  table
+    p(v-if="users.length == 0") No hay usuarios
+
+    tr(v-for="user in users")
+      td {{user.name}}
+      td {{user.email}}
