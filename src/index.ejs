@@ -6,7 +6,9 @@
   </head>
   <body>
     <div id="app">
-      <router-view></router-view>
+      <component :is="($route.meta.layout || 'default') + '-layout'">
+        <router-view></router-view>
+      </component>
     </div>
   </body>
 </html>

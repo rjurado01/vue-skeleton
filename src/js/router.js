@@ -1,7 +1,5 @@
 import VueRouter from 'vue-router';
 
-
-
 import Home from './pages/home/index.js';
 
 Vue.use(VueRouter);
@@ -13,16 +11,16 @@ Vue.use(VueRouter);
 const routes = [
 
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: Home,
     meta: {
-      auth: true
+      layout: 'default'
     }
   },
   {
     path: '*',
-    redirect: '/'
+    redirect: '/home'
   }
 ];
 
@@ -32,7 +30,5 @@ const routes = [
 const router = new VueRouter({
   routes
 });
-
-
 
 export default router;
