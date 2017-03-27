@@ -5,11 +5,13 @@
   "main": "dist/application.js",
   "scripts": {
     "dist": "ENV=production webpack --optimize-minimize",
-    "start": "ENV=development webpack-dev-server --inline --hot --host 0.0.0.0"
+    "start": "ENV=development webpack-dev-server --inline --hot --host 0.0.0.0",
+    "g": "node generator/generator.js"
   },
   "author": "NSS",
   "license": "ISC",
   "dependencies": {
+    "spectre": "0.0.1",
     "vue": "^2.2.4",
     "vue-i18n": "^5.0.3",
     "vue-resource": "^1.2.1",
